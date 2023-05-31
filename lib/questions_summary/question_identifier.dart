@@ -17,15 +17,16 @@ class QuestionIdentifier extends StatelessWidget {
       height: 30,
       alignment: Alignment.center,
       decoration: BoxDecoration(
-          color: isCorrectAnswer?
-           const Color.fromARGB(255, 150, 198, 241):
-          const Color.fromARGB(255, 249, 133, 241),
-          borderRadius: BorderRadius.circular(100),
+        color: isCorrectAnswer
+            ? const Color.fromARGB(254, 150, 198, 241)
+            : const Color.fromARGB(255, 249, 133, 241),
+        borderRadius: BorderRadius.circular(100),
       ),
       child: Text(
         questionNumer.toString(),
-        style: const TextStyle(color: Color.fromARGB(255, 22, 2, 56),
-        fontWeight: FontWeight.bold,
+        style: const TextStyle(
+          color: Color.fromARGB(255, 22, 2, 56),
+          fontWeight: FontWeight.bold,
         ),
       ),
     );
